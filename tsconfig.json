@@ -11,6 +11,10 @@
     "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"],
     "compilerOptions": {
         "forceConsistentCasingInFileNames": true,
-        "strict": true
+        "strict": true,
+        "baseUrl": "./",
+        "paths": {
+          "@/*": ["./src/*"]
+        }
     }
 }
